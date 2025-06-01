@@ -1,0 +1,5 @@
+Named Entities:
+DataFormat(audio, image)
+Dataset(labeled data produced by analysts)
+DeepLearningModel(deep convolutional neural networks (CNNs), deep feed forward neural networks (DNNs))
+ModelPurpose(classification of species signals and event types)

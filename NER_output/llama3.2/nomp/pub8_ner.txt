@@ -1,0 +1,10 @@
+Named Entities:
+DataFormat(image)
+Dataset(Herbarium Senckenbergianum (FR), GBIF dataset)
+DeepLearningModel(Faster R-CNN, convolutional neural network (CNN))
+Hyperparameter(Number of units in the two FC layers, Dropout rate)
+Framework(PyTorch)
+HardwareResource(TITAN Xp GPU)
+Metric(Accuracy, Multiclass recall rate, Multiclass precision, F1-score)
+Purpose(Family-level classification of below-ground bulk samples of Coleoptera)
+RegularizationMethod(dropout)

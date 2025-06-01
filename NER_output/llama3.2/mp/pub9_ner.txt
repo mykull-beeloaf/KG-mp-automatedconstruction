@@ -1,0 +1,10 @@
+Named Entities:
+DataFormat(Image)
+Dataset(Sashimi dataset)
+DeepLearningModel(Sashimi toolkit-based Mask R-CNN model)
+Hyperparameter(Learning rate schedule (three stages), weight decay value)
+RegularizationMethod(Dropout)
+Framework(TensorFlow)
+HardwareResource(GeForce RTX 2080 GPU)
+Metric(Frequency-weighted IoU, pixel accuracy, mean accuracy, mean IoU)
+Purpose(Image segmentation for family-level classification of below-ground bulk samples of Coleoptera)

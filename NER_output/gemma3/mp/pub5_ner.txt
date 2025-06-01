@@ -1,0 +1,11 @@
+Named Entities:
+DataFormat(Not Specified)
+Dataset(Species richness data collected in South Korea and multitemporal remote sensing data)
+DeepLearningModel(convolutional neural network (CNN))
+Hyperparameter(number of units in the two FC layers, dropout rate)
+OptimizationTechnique(statistical feature importance test (SFIT))
+RegularizationMethod(dropout)
+Framework(Not Specified).
+HardwareResource(Not Specifiedg).
+PerformanceMetric(root mean square error (RMSE))
+ModelPurpose(develop a species richness retrieval model by integration of the surveyed and estimated richness information collected in South Korea and multitemporal remote sensing data).

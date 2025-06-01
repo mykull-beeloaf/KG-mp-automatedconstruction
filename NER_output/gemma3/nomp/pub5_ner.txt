@@ -1,0 +1,13 @@
+Named Entities:
+DeepLearningPipeline(species richness retrieval model)
+DataFormat(multitemporal remote sensing data, grids with a 10 km resolution)
+Dataset(South Korea, tree plot datasets from the Korea Forest Service)
+DeepLearningModel(species richness, convolutional neural network (DL))
+Hyperparameter(RMSE)
+OptimizationTechnique(statistical feature importance test (SFIT))
+RegularizationMethod(dropout)
+Framework(DL species richness)
+HardwareResource(GPU)
+Metric(Root Mean Square Error (RMSE))
+Performance(correlation, overall correlation and local correlations)
+Purpose(develop a species richness retrieval model)

@@ -1,0 +1,13 @@
+Named Entities:
+DataFormat(spectrogram)
+Dataset(bird recordings dataset)
+DeepLearningModel(modified U-Net architecture for spectrogram segmentation)
+Hyperparameter(number of units in the two FC layers, dropout rate)
+PreprocessingStep(data augmentation techniques)
+RegularizationMethod(L1 regularization)
+OptimizationTechnique(stochastic gradient descent (SGD) with batch normalization)
+Framework(Keras)
+CodeRepository(not specified)
+HardwareResource(NVIDIA GPU)
+Metric(mean Dice coefficient loss function)
+Purpose(family-level classification of below-ground bulk samples of Coleoptera)

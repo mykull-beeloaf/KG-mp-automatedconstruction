@@ -1,0 +1,13 @@
+Named Entities:
+DataFormat(grey-coloured 1-channel images, audio spectrograms)
+Dataset(spectrogram figures of bird recordings, recordings void of any bird activity)
+DataAugmentationTechnique(random rotations between -5 and 5 degrees, random displacements at the maximum of the 10% of the image)
+DeepLearningModel(U-net deep autoencoder, convolutional neural network (CNN))
+OptimizationTechnique(not specified)
+RegularizationMethod(not specified)
+Framework(Keras, CUDA-CuDNN, PyTorch)
+HardwareResource(TITAN-X GPU)
+Metric(mean Dice coefficient loss function, Dice coefficient)
+ModelPurpose(segmentation of bird vocalizations from audio spectrograms)
+CodeRepository(not specified)
+PreprocessingStep(normalization, scaling, cleaning, data augmentation)

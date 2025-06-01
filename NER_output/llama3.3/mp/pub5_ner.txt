@@ -1,0 +1,11 @@
+Named Entities:
+DataFormat(image)
+Dataset(MODIS-derived NDVI and LAI)
+DeepLearningModel(Multilayer Perceptron (MLP))
+RegularizationMethod(dropout, L2 regularization)
+Metric(Root Mean Square Error (RMSE))
+ModelPurpose(species richness retrieval)
+HardwareResource(NVIDIA Titan X GPU)
+OptimizationTechnique(dropout, L2 regularization)
+PreprocessingStep(normalization, scaling, cleaning)
+DataAugmentationTechnique(not mentioned)

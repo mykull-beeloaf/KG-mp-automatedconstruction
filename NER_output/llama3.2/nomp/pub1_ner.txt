@@ -1,0 +1,10 @@
+Named Entities:
+DataFormat(images, audio, text)
+Dataset(Audubon Birds of North America dataset, Global Biodiversity Information Facility (GBIF) dataset)
+DeepLearningModel(convolutional neural network (CNN))
+Hyperparameter(Number of units in the two FC layers, Dropout rate)
+RegularizationMethod(dropout)
+Framework(TensorFlow, PyTorch)
+HardwareResource(NVIDIA GPU, Google Cloud TPUs)
+Metric(Accuracy, Multiclass recall rate, Multiclass precision, F1-score)
+Purpose(family-level classification of below-ground bulk samples of Coleoptera)
