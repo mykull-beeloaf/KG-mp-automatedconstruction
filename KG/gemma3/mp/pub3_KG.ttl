@@ -1,0 +1,109 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:GPUs a dlprov:HardwareResource ;
+    rdfs:label "GPUs" .
+
+dlprov:Inception_V3 a dlprov:DeepLearningModel ;
+    rdfs:label "Inception V3" .
+
+dlprov:Keras a dlprov:Framework ;
+    rdfs:label "Keras" .
+
+dlprov:Philippine_forest_frogs a dlprov:Dataset ;
+    rdfs:label "Philippine forest frogs" .
+
+dlprov:TPUs a dlprov:HardwareResource ;
+    rdfs:label "TPUs" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:TensorFlow%E2%80%99s_flexible_architecture_allows_easy_adaptation_and_deployment_on_different_platforms a dlprov:OptimizationTechnique ;
+    rdfs:label "TensorFlow’s flexible architecture allows easy adaptation and deployment on different platforms" .
+
+dlprov:achieving_100%25_correct_identification_rate_for_some_species a dlprov:PreprocessingStep ;
+    rdfs:label "achieving 100% correct identification rate for some species" .
+
+dlprov:average_certainty_rate_associated_with_those_identifications a dlprov:Hyperparameter ;
+    rdfs:label "average certainty rate associated with those identifications" .
+
+dlprov:calculating_the_overall_correct_identification_rate a dlprov:PreprocessingStep ;
+    rdfs:label "calculating the overall correct identification rate" .
+
+dlprov:classification a dlprov:ModelPurpose ;
+    rdfs:label "classification" .
+
+dlprov:creating_a_confusion_matrix a dlprov:PreprocessingStep ;
+    rdfs:label "creating a confusion matrix" .
+
+dlprov:dropout a dlprov:RegularizationMethod ;
+    rdfs:label "dropout" .
+
+dlprov:employing_a_leave-one-out_cross-validation_technique a dlprov:PreprocessingStep ;
+    rdfs:label "employing a leave-one-out cross-validation technique" .
+
+dlprov:images a dlprov:DataFormat ;
+    rdfs:label "images" .
+
+dlprov:increasing_the_validation_parameter_to_20%25 a dlprov:PreprocessingStep ;
+    rdfs:label "increasing the validation parameter to 20%" .
+
+dlprov:leave-one-out_cross-validation_technique a dlprov:DataAugmentationTechnique ;
+    rdfs:label "leave-one-out cross-validation technique" .
+
+dlprov:number_of_images_per_class_assigned_to_a_species_present_in_the_reference_library a dlprov:Hyperparameter ;
+    rdfs:label "number of images per class assigned to a species present in the reference library" .
+
+dlprov:number_of_images_per_class_assigned_to_a_species_present_in_the_reference_library_and_the_average_certainty_rate_associated_with_those_identifications a dlprov:PerformanceMetric ;
+    rdfs:label "number of images per class assigned to a species present in the reference library and the average certainty rate associated with those identifications" .
+
+dlprov:species_of_Philippine_forest_frogs_based_on_their_frequency_distributions_of_individual_call_notes a dlprov:DeepLearningPipeline ;
+    rdfs:label "species of Philippine forest frogs based on their frequency distributions of individual call notes" .
+
+dlprov:training_steps a dlprov:Hyperparameter ;
+    rdfs:label "training steps" .
+
+dlprov:using_a_diverse_dataset a dlprov:PreprocessingStep ;
+    rdfs:label "using a diverse dataset" .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:PerformanceMetric a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

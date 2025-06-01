@@ -1,0 +1,43 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:audio a dlprov:DataFormat ;
+    rdfs:label "audio" .
+
+dlprov:augmentation a dlprov:PreprocessingStep ;
+    rdfs:label "augmentation" .
+
+dlprov:classification_of_presence_or_absence_and_activity_rates_of_endangered_species a dlprov:ModelPurpose ;
+    rdfs:label "classification of presence or absence and activity rates of endangered species" .
+
+dlprov:classification_of_species_signals_and_event_types a dlprov:ModelPurpose ;
+    rdfs:label "classification of species signals and event types" .
+
+dlprov:cleaning a dlprov:PreprocessingStep ;
+    rdfs:label "cleaning" .
+
+dlprov:deep_convolutional_neural_networks a dlprov:DeepLearningModel ;
+    rdfs:label "deep convolutional neural networks" .
+
+dlprov:image a dlprov:DataFormat ;
+    rdfs:label "image" .
+
+dlprov:normalization a dlprov:PreprocessingStep ;
+    rdfs:label "normalization" .
+
+dlprov:scaling a dlprov:PreprocessingStep ;
+    rdfs:label "scaling" .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

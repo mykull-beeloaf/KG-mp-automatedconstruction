@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/optimizationTechniqueName">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/OptimizationTechnique"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>optimizationTechniqueName</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/codeRepositoryLink">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/CodeRepository"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>codeRepositoryLink</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/metricName">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Metric"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>metricName</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/preprocessingStepDescription">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/PreprocessingStep"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>preprocessingStepDescription</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/datasetName">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Dataset"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>datasetName</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/usesDataFormat">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DataFormat"/>
+    <rdfs:label>usesDataFormat</rdfs:label>
+    <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/isDataFormatOf"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/hyperparameterValue">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Hyperparameter"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>hyperparameterValue</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/dataFormatName">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DataFormat"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>dataFormatName</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/frameworkName">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Framework"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>frameworkName</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/modelPurposeDescription">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/ModelPurpose"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>modelPurposeDescription</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/hardwareResourceType">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/HardwareResource"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>hardwareResourceType</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="https://w3id.org/dlprovenance/regularizationMethodName">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/RegularizationMethod"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>regularizationMethodName</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/hasCodeRepository">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/CodeRepository"/>
+    <rdfs:label>hasCodeRepository</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isCodeRepositoryOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/CodeRepository"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:label>isCodeRepositoryOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/hasCodeRepository"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isMetricOf">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Metric"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:label>isMetricOf</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/evaluatesWithMetric">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/Metric"/>
+        <rdfs:label>evaluatesWithMetric</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/isMetricOf"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isRegularizationMethodOf">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/RegularizationMethod"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:label>isRegularizationMethodOf</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/usesRegularizationMethod">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/RegularizationMethod"/>
+        <rdfs:label>usesRegularizationMethod</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/isRegularizationMethodOf"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/hasModelPurpose">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningModel"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/ModelPurpose"/>
+    <rdfs:label>hasModelPurpose</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isModelPurposeOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/ModelPurpose"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningModel"/>
+        <rdfs:label>isModelPurposeOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/hasModelPurpose"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isDataAugmentationTechniqueOf">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DataAugmentationTechnique"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:label>isDataAugmentationTechniqueOf</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/appliesDataAugmentationTechnique">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DataAugmentationTechnique"/>
+        <rdfs:label>appliesDataAugmentationTechnique</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/isDataAugmentationTechniqueOf"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/Hyperparameter">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hyperparameter</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/usesDeepLearningModel">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningModel"/>
+    <rdfs:label>usesDeepLearningModel</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isDeepLearningModelOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningModel"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:label>isDeepLearningModelOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/usesDeepLearningModel"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/RegularizationMethod">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RegularizationMethod</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/ModelPurpose">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ModelPurpose</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/hasHyperparameter">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningModel"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/Hyperparameter"/>
+    <rdfs:label>hasHyperparameter</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isHyperparameterOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Hyperparameter"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningModel"/>
+        <rdfs:label>isHyperparameterOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/hasHyperparameter"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/usesDataset">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/Dataset"/>
+    <rdfs:label>usesDataset</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isDatasetOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Dataset"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:label>isDatasetOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/usesDataset"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/trainsOnHardwareResource">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/HardwareResource"/>
+    <rdfs:label>trainsOnHardwareResource</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isHardwareResourceOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/HardwareResource"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:label>isHardwareResourceOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/trainsOnHardwareResource"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/OptimizationTechnique">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OptimizationTechnique</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/DeepLearningPipeline">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeepLearningPipeline</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/Metric">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Metric</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/buildsWithFramework">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/Framework"/>
+    <rdfs:label>buildsWithFramework</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isFrameworkOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/Framework"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:label>isFrameworkOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/buildsWithFramework"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/Framework">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Framework</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/DeepLearningModel">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeepLearningModel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/Dataset">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dataset</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/CodeRepository">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CodeRepository</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/DataAugmentationTechnique">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataAugmentationTechnique</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/DataFormat">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataFormat</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isOptimizationTechniqueOf">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/OptimizationTechnique"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:label>isOptimizationTechniqueOf</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/appliesOptimizationTechnique">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/OptimizationTechnique"/>
+        <rdfs:label>appliesOptimizationTechnique</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/isOptimizationTechniqueOf"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/HardwareResource">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HardwareResource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/involvesPreprocessingStep">
+    <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprovenance/PreprocessingStep"/>
+    <rdfs:label>involvesPreprocessingStep</rdfs:label>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprovenance/isPreprocessingStepOf">
+        <rdfs:domain rdf:resource="https://w3id.org/dlprovenance/PreprocessingStep"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprovenance/DeepLearningPipeline"/>
+        <rdfs:label>isPreprocessingStepOf</rdfs:label>
+        <owl:inverseOf rdf:resource="https://w3id.org/dlprovenance/involvesPreprocessingStep"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="https://w3id.org/dlprovenance/PreprocessingStep">
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PreprocessingStep</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </owl:Class>
+</rdf:RDF>

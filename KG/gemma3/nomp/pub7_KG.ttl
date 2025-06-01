@@ -1,0 +1,79 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Benthoz15_dataset a dlprov:DataFormat,
+        dlprov:Dataset ;
+    rdfs:label "Benthoz15 dataset" .
+
+dlprov:VGGnet a dlprov:Framework ;
+    rdfs:label "VGGnet" .
+
+dlprov:accuracy a dlprov:Metric ;
+    rdfs:label "accuracy" .
+
+dlprov:classification_accuracy_greater_than_90%25 a dlprov:Performance ;
+    rdfs:label "classification accuracy greater than 90%" .
+
+dlprov:convolutional_neural_network a dlprov:DeepLearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:coral_reef_classification a dlprov:DeepLearningPipeline,
+        dlprov:Purpose ;
+    rdfs:label "coral reef classification" .
+
+dlprov:dropout a dlprov:RegularizationMethod ;
+    rdfs:label "dropout" .
+
+dlprov:dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "dropout rate" .
+
+dlprov:fine-tuning_of_a_pre-trained_VGGnet a dlprov:OptimizationTechnique,
+        dlprov:PreprocessingStep ;
+    rdfs:label "fine-tuning of a pre-trained VGGnet" .
+
+dlprov:not_provided_in_the_text a dlprov:CodeRepositoryLink ;
+    rdfs:label "not provided in the text" .
+
+dlprov:number_of_units_in_the_two_FC_layers a dlprov:Hyperparameter ;
+    rdfs:label "number of units in the two FC layers" .
+
+dlprov:CodeRepositoryLink a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Performance a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+

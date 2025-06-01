@@ -1,0 +1,43 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Classification_of_endangered_species_and_sound_analysis_of_energy_infrastructure_impacts a dlprov:ModelPurpose ;
+    rdfs:label "Classification of endangered species and sound analysis of energy infrastructure impacts" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Dozens_of_species_signals_and_event_types a dlprov:Dataset ;
+    rdfs:label "Dozens of species signals and event types" .
+
+dlprov:Species_classification_and_activity_rate_monitoring_of_endangered_species a dlprov:DeepLearningPipeline ;
+    rdfs:label "Species classification and activity rate monitoring of endangered species" .
+
+dlprov:audio a dlprov:DataFormat ;
+    rdfs:label "audio" .
+
+dlprov:image a dlprov:DataFormat ;
+    rdfs:label "image" .
+
+dlprov:including_endangered_species a dlprov:Dataset ;
+    rdfs:label "including endangered species" .
+
+dlprov:sound_analysis_of_bird_collisions_with_infrastructure a dlprov:DeepLearningPipeline ;
+    rdfs:label "sound analysis of bird collisions with infrastructure" .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+

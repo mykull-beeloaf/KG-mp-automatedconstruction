@@ -1,0 +1,85 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Accuracy a dlprov:Metric ;
+    rdfs:label "Accuracy" .
+
+dlprov:Audubon_Birds_of_North_America_dataset a dlprov:Dataset ;
+    rdfs:label "Audubon Birds of North America dataset" .
+
+dlprov:Dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "Dropout rate" .
+
+dlprov:F1-score a dlprov:Metric ;
+    rdfs:label "F1-score" .
+
+dlprov:Global_Biodiversity_Information_Facility a dlprov:Dataset ;
+    rdfs:label "Global Biodiversity Information Facility" .
+
+dlprov:Google_Cloud_TPUs a dlprov:HardwareResource ;
+    rdfs:label "Google Cloud TPUs" .
+
+dlprov:Multiclass_precision a dlprov:Metric ;
+    rdfs:label "Multiclass precision" .
+
+dlprov:Multiclass_recall_rate a dlprov:Metric ;
+    rdfs:label "Multiclass recall rate" .
+
+dlprov:NVIDIA_GPU a dlprov:HardwareResource ;
+    rdfs:label "NVIDIA GPU" .
+
+dlprov:Number_of_units_in_the_two_FC_layers a dlprov:Hyperparameter ;
+    rdfs:label "Number of units in the two FC layers" .
+
+dlprov:PyTorch a dlprov:Framework ;
+    rdfs:label "PyTorch" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:audio a dlprov:DataFormat ;
+    rdfs:label "audio" .
+
+dlprov:convolutional_neural_network a dlprov:DeepLearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:dropout a dlprov:RegularizationMethod ;
+    rdfs:label "dropout" .
+
+dlprov:family-level_classification_of_below-ground_bulk_samples_of_Coleoptera a dlprov:Purpose ;
+    rdfs:label "family-level classification of below-ground bulk samples of Coleoptera" .
+
+dlprov:images a dlprov:DataFormat ;
+    rdfs:label "images" .
+
+dlprov:text a dlprov:DataFormat ;
+    rdfs:label "text" .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

@@ -1,0 +1,106 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Accuracy_rate_for_species_identification_model a dlprov:Metric ;
+    rdfs:label "Accuracy rate for species identification model" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "Dropout rate" .
+
+dlprov:F1-score_for_each_species a dlprov:Metric ;
+    rdfs:label "F1-score for each species" .
+
+dlprov:GitHub a dlprov:CodeRepository ;
+    rdfs:label "GitHub" .
+
+dlprov:Keras a dlprov:Framework ;
+    rdfs:label "Keras" .
+
+dlprov:L1_regularization a dlprov:RegularizationMethod ;
+    rdfs:label "L1 regularization" .
+
+dlprov:Multiclass_recall_rate_for_each_species a dlprov:Metric ;
+    rdfs:label "Multiclass recall rate for each species" .
+
+dlprov:NVIDIA_GPU a dlprov:HardwareResource ;
+    rdfs:label "NVIDIA GPU" .
+
+dlprov:Normalization_of_audio_signal_using_Mean_and_Standard_Deviation a dlprov:PreprocessingStep ;
+    rdfs:label "Normalization of audio signal using Mean and Standard Deviation" .
+
+dlprov:Number_of_units_in_the_two_fully_connected_layers a dlprov:Hyperparameter ;
+    rdfs:label "Number of units in the two fully connected layers" .
+
+dlprov:Precision_rate_for_each_species a dlprov:Metric ;
+    rdfs:label "Precision rate for each species" .
+
+dlprov:Random_cropping a dlprov:DataAugmentationTechnique ;
+    rdfs:label "Random cropping" .
+
+dlprov:Species_identification_and_taxonomic_classification a dlprov:Purpose ;
+    rdfs:label "Species identification and taxonomic classification" .
+
+dlprov:Species_identification_dataset_for_Philippine_forest_frogs a dlprov:Dataset ;
+    rdfs:label "Species identification dataset for Philippine forest frogs" .
+
+dlprov:Stochastic_Gradient_Descent_with_momentum a dlprov:OptimizationTechnique ;
+    rdfs:label "Stochastic Gradient Descent with momentum" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:and_data_augmentation_using_Scikit-image_library a dlprov:DataAugmentationTechnique ;
+    rdfs:label "and data augmentation using Scikit-image library" .
+
+dlprov:audio a dlprov:DataFormat ;
+    rdfs:label "audio" .
+
+dlprov:image a dlprov:DataFormat ;
+    rdfs:label "image" .
+
+dlprov:random_flipping a dlprov:DataAugmentationTechnique ;
+    rdfs:label "random flipping" .
+
+dlprov:CodeRepository a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

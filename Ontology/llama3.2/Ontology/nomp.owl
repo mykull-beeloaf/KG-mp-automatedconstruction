@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#hasCodeRepository">
+    <rdfs:label>hasCodeRepository</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/dlprov#DeepLearningModel"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#CodeRepository"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isRepositoryFor">
+        <rdfs:label>isRepositoryFor</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#CodeRepository"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprov#DeepLearningModel"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#usesFramework">
+    <rdfs:label>usesFramework</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Builder"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#Framework"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isFrameworkFor">
+        <rdfs:label>isFrameworkFor</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#Framework"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Builder"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#hasDataFormat">
+    <rdfs:label>hasDataFormat</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/dlprov#Dataset"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#DataFormat"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isDataFormatOf">
+        <rdfs:label>isDataFormatOf</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#DataFormat"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprov#Dataset"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#usesDataset">
+    <rdfs:label>usesDataset</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#Dataset"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isUsedIn">
+        <rdfs:label>isUsedIn</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#usesHardwareResource">
+    <rdfs:label>usesHardwareResource</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/dlprov#DeepLearningModel"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#HardwareResource"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isResourceFor">
+        <rdfs:label>isResourceFor</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#HardwareResource"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprov#DeepLearningModel"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#usesRegularizationMethod">
+    <rdfs:label>usesRegularizationMethod</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#RegularizationMethod"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isMethodFor">
+        <rdfs:label>isMethodFor</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#RegularizationMethod"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#usesOptimizationTechnique">
+    <rdfs:label>usesOptimizationTechnique</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#OptimizationTechnique"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isTechniqueFor">
+        <rdfs:label>isTechniqueFor</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#OptimizationTechnique"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#hasMetric">
+    <rdfs:label>hasMetric</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Evaluation"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#Metric"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isMetricOf">
+        <rdfs:label>isMetricOf</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#Metric"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Evaluation"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#hasHyperparameter">
+    <rdfs:label>hasHyperparameter</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#Hyperparameter"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isParameterOf">
+        <rdfs:label>isParameterOf</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#Hyperparameter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#usesModel">
+    <rdfs:label>usesModel</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#DeepLearningModel"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isUsedBy">
+        <rdfs:label>isUsedBy</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#DeepLearningModel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#appliesDataAugmentation">
+    <rdfs:label>appliesDataAugmentation</rdfs:label>
+    <rdfs:domain rdf:resource="https://w3id.org/dlprov#PreprocessingStep"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#DataAugmentationTechnique"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isAppliedTo">
+        <rdfs:label>isAppliedTo</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#DataAugmentationTechnique"/>
+        <rdfs:range rdf:resource="https://w3id.org/dlprov#PreprocessingStep"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#hasPreprocessingStep">
+    <rdfs:label>hasPreprocessingStep</rdfs:label>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+    <rdfs:range rdf:resource="https://w3id.org/dlprov#PreprocessingStep"/>
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="https://w3id.org/dlprov#isStepOf">
+        <rdfs:label>isStepOf</rdfs:label>
+        <rdfs:domain rdf:resource="https://w3id.org/dlprov#PreprocessingStep"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+      </owl:ObjectProperty>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:Class rdf:about="https://w3id.org/dlprov#Purpose">
+    <rdfs:label>Purpose</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Intended use case of the model</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#Dataset">
+    <rdfs:label>Dataset</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Collection of data used for training</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#CodeRepository">
+    <rdfs:label>CodeRepository</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Source code repository for the model</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#DataFormat">
+    <rdfs:label>DataFormat</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>The format of data used in the pipeline</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#OptimizationTechnique">
+    <rdfs:label>OptimizationTechnique</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Methods for optimizing model parameters</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#Framework">
+    <rdfs:label>Framework</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Software framework used</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#HardwareResource">
+    <rdfs:label>HardwareResource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Computing resources utilized</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#DeepLearningModel">
+    <rdfs:label>DeepLearningModel</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>The trained machine learning model</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#DataAugmentationTechnique">
+    <rdfs:label>DataAugmentationTechnique</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Techniques for augmenting training data</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#Metric">
+    <rdfs:label>Metric</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Performance evaluation metrics</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#RegularizationMethod">
+    <rdfs:label>RegularizationMethod</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Techniques to prevent overfitting</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#Hyperparameter">
+    <rdfs:label>Hyperparameter</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Configuration parameters for the model</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://w3id.org/dlprov#PreprocessingStep">
+    <rdfs:label>PreprocessingStep</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:comment>Steps for preparing raw data</rdfs:comment>
+  </owl:Class>
+</rdf:RDF>

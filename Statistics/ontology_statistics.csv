@@ -1,0 +1,7 @@
+Model,Variant,Classes,Object_Properties,Data_Properties,SubClassOf_Axioms,Total_Axioms
+llama3.2,mp,13,22,0,13,151
+llama3.2,nomp,13,24,0,13,160
+gemma3,mp,14,10,5,14,126
+gemma3,nomp,15,11,8,15,151
+llama3.3,mp,14,25,11,14,211
+llama3.3,nomp,14,26,11,14,203

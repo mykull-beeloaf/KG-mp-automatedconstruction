@@ -1,0 +1,127 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:0.25_for_testing a dlprov:Hyperparameter ;
+    rdfs:label "0.25 for testing" .
+
+dlprov:1024%5D a dlprov:Hyperparameter ;
+    rdfs:label "1024]" .
+
+dlprov:128 a dlprov:Hyperparameter ;
+    rdfs:label "128" .
+
+dlprov:256 a dlprov:Hyperparameter ;
+    rdfs:label "256" .
+
+dlprov:512 a dlprov:Hyperparameter ;
+    rdfs:label "512" .
+
+dlprov:64 a dlprov:Hyperparameter ;
+    rdfs:label "64" .
+
+dlprov:Average_size_ca._9600_by_6500_pixels a dlprov:PerformanceMetric ;
+    rdfs:label "Average size ca. 9600 by 6500 pixels" .
+
+dlprov:Detectron2 a dlprov:Framework ;
+    rdfs:label "Detectron2" .
+
+dlprov:Faster_R-CNN a dlprov:DeepLearningPipeline ;
+    rdfs:label "Faster R-CNN" .
+
+dlprov:GitHub a dlprov:CodeRepositoryLink ;
+    rdfs:label "GitHub" .
+
+dlprov:Herbarium_Senckenbergianum a dlprov:Dataset ;
+    rdfs:label "Herbarium Senckenbergianum" .
+
+dlprov:NMS_thresholds_0.6_for_training a dlprov:Hyperparameter ;
+    rdfs:label "NMS thresholds 0.6 for training" .
+
+dlprov:PyTorch a dlprov:Framework ;
+    rdfs:label "PyTorch" .
+
+dlprov:Stochastic_Gradient_Descent a dlprov:OptimizationTechnique ;
+    rdfs:label "Stochastic Gradient Descent" .
+
+dlprov:Stochastic_Gradient_Descent_optimiser a dlprov:PreprocessingStep ;
+    rdfs:label "Stochastic Gradient Descent optimiser" .
+
+dlprov:TITAN_Xp_GPUs a dlprov:HardwareResource ;
+    rdfs:label "TITAN Xp GPUs" .
+
+dlprov:anchor_generator a dlprov:PreprocessingStep ;
+    rdfs:label "anchor generator" .
+
+dlprov:ca._9600_by_6500_pixels a dlprov:DataFormat ;
+    rdfs:label "ca. 9600 by 6500 pixels" .
+
+dlprov:convolutional_neural_network a dlprov:DeepLearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:detection_and_localisation_of_plant_organs a dlprov:ModelPurpose ;
+    rdfs:label "detection and localisation of plant organs" .
+
+dlprov:dropout a dlprov:RegularizationMethod ;
+    rdfs:label "dropout" .
+
+dlprov:herbarium_scans a dlprov:DataFormat ;
+    rdfs:label "herbarium scans" .
+
+dlprov:learning_rate_0.0025 a dlprov:Hyperparameter ;
+    rdfs:label "learning rate 0.0025" .
+
+dlprov:momentum_0.9 a dlprov:Hyperparameter ;
+    rdfs:label "momentum 0.9" .
+
+dlprov:non-maximum_suppression a dlprov:PreprocessingStep ;
+    rdfs:label "non-maximum suppression" .
+
+dlprov:object_detection_and_localisation a dlprov:ModelPurpose ;
+    rdfs:label "object detection and localisation" .
+
+dlprov:six_anchor_scales_%5B32 a dlprov:Hyperparameter ;
+    rdfs:label "six anchor scales [32" .
+
+dlprov:three_GPUs a dlprov:HardwareResource ;
+    rdfs:label "three GPUs" .
+
+dlprov:CodeRepositoryLink a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:PerformanceMetric a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+

@@ -1,0 +1,94 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Abrolhos_Islands_images a dlprov:Dataset ;
+    rdfs:label "Abrolhos Islands images" .
+
+dlprov:Benthoz15_dataset a dlprov:Dataset ;
+    rdfs:label "Benthoz15 dataset" .
+
+dlprov:Coral_reef_classification a dlprov:Purpose ;
+    rdfs:label "Coral reef classification" .
+
+dlprov:Dropout a dlprov:RegularizationMethod ;
+    rdfs:label "Dropout" .
+
+dlprov:Dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "Dropout rate" .
+
+dlprov:F1-score a dlprov:Metric ;
+    rdfs:label "F1-score" .
+
+dlprov:Feature_extraction a dlprov:PreprocessingStep ;
+    rdfs:label "Feature extraction" .
+
+dlprov:Fine-tuning_of_pre-trained_VGGnet a dlprov:OptimizationTechnique ;
+    rdfs:label "Fine-tuning of pre-trained VGGnet" .
+
+dlprov:Number_of_units_in_the_two_fully_connected_layers a dlprov:Hyperparameter ;
+    rdfs:label "Number of units in the two fully connected layers" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:accuracy a dlprov:Metric ;
+    rdfs:label "accuracy" .
+
+dlprov:convolutional_neural_network a dlprov:DeeplearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:deployment a dlprov:DeepLearningPipeline ;
+    rdfs:label "deployment" .
+
+dlprov:evaluation a dlprov:DeepLearningPipeline ;
+    rdfs:label "evaluation" .
+
+dlprov:fine-tuning a dlprov:DataAugmentationTechnique ;
+    rdfs:label "fine-tuning" .
+
+dlprov:model_training a dlprov:DeepLearningPipeline ;
+    rdfs:label "model training" .
+
+dlprov:multiclass_precision a dlprov:Metric ;
+    rdfs:label "multiclass precision" .
+
+dlprov:multiclass_recall_rate a dlprov:Metric ;
+    rdfs:label "multiclass recall rate" .
+
+dlprov:preprocessing_steps a dlprov:DeepLearningPipeline ;
+    rdfs:label "preprocessing steps" .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeeplearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

@@ -1,0 +1,71 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Abrolhos_Islands_images a dlprov:Dataset ;
+    rdfs:label "Abrolhos Islands images" .
+
+dlprov:Accuracy a dlprov:Metric ;
+    rdfs:label "Accuracy" .
+
+dlprov:Benthoz15_dataset a dlprov:DataFormat,
+        dlprov:Dataset ;
+    rdfs:label "Benthoz15 dataset" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Dropout a dlprov:RegularizationMethod ;
+    rdfs:label "Dropout" .
+
+dlprov:Dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "Dropout rate" .
+
+dlprov:Expert_annotation a dlprov:PreprocessingStep ;
+    rdfs:label "Expert annotation" .
+
+dlprov:Family-level_classification_of_below-ground_bulk_samples_of_Coleoptera a dlprov:Purpose ;
+    rdfs:label "Family-level classification of below-ground bulk samples of Coleoptera" .
+
+dlprov:Fine-tuning_using_Stochastic_Gradient_Descent a dlprov:OptimizationTechnique ;
+    rdfs:label "Fine-tuning using Stochastic Gradient Descent" .
+
+dlprov:Keras a dlprov:Framework ;
+    rdfs:label "Keras" .
+
+dlprov:Number_of_units_in_the_two_FC_layers a dlprov:Hyperparameter ;
+    rdfs:label "Number of units in the two FC layers" .
+
+dlprov:geo-referencing a dlprov:PreprocessingStep ;
+    rdfs:label "geo-referencing" .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

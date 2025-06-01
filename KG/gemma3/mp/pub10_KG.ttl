@@ -1,0 +1,85 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Dice_coefficient_loss_function a dlprov:PerformanceMetric ;
+    rdfs:label "Dice coefficient loss function" .
+
+dlprov:GPU a dlprov:HardwareResource ;
+    rdfs:label "GPU" .
+
+dlprov:N_A_-_Not_explicitly_mentioned_in_the_text a dlprov:RegularizationMethod ;
+    rdfs:label "N/A - Not explicitly mentioned in the text" .
+
+dlprov:N_A_-_Not_provided_in_the_text a dlprov:CodeRepositoryLink ;
+    rdfs:label "N/A - Not provided in the text" .
+
+dlprov:and_the_mask_is_presented_as_output a dlprov:PreprocessingStep ;
+    rdfs:label "and the mask is presented as output" .
+
+dlprov:audio_spectrogram_figures a dlprov:DataFormat ;
+    rdfs:label "audio spectrogram figures" .
+
+dlprov:convolutional_neural_network a dlprov:DeepLearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:iterative_procedure a dlprov:OptimizationTechnique ;
+    rdfs:label "iterative procedure" .
+
+dlprov:learns_the_mapping_in-between_them a dlprov:PreprocessingStep ;
+    rdfs:label "learns the mapping in-between them" .
+
+dlprov:segmentation a dlprov:ModelPurpose ;
+    rdfs:label "segmentation" .
+
+dlprov:segmentation_of_bird_vocalizations_from_audio_spectrograms a dlprov:DeepLearningPipeline ;
+    rdfs:label "segmentation of bird vocalizations from audio spectrograms" .
+
+dlprov:small_random_rotations_between_-5_and_5_degrees_as_well_as_random_displacements_at_the_maximum_of_the_10%25_of_the_image a dlprov:DataAugmentationTechnique ;
+    rdfs:label "small random rotations between -5 and 5 degrees as well as random displacements at the maximum of the 10% of the image" .
+
+dlprov:spectrogram_figures_of_bird_recordings_as_well_as_recordings_void_of_any_bird_activity_and_their_corresponding_binary_masks a dlprov:Dataset ;
+    rdfs:label "spectrogram figures of bird recordings as well as recordings void of any bird activity and their corresponding binary masks" .
+
+dlprov:the_spectrogram_is_presented_as_input a dlprov:PreprocessingStep ;
+    rdfs:label "the spectrogram is presented as input" .
+
+dlprov:training a dlprov:PreprocessingStep ;
+    rdfs:label "training" .
+
+dlprov:CodeRepositoryLink a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:PerformanceMetric a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

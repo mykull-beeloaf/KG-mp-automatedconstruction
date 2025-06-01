@@ -1,0 +1,106 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Average_Precision a dlprov:Metric ;
+    rdfs:label "Average Precision" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Detectron2 a dlprov:Framework ;
+    rdfs:label "Detectron2" .
+
+dlprov:Faster_R-CNN a dlprov:DeepLearningModel ;
+    rdfs:label "Faster R-CNN" .
+
+dlprov:GitHub a dlprov:CodeRepository ;
+    rdfs:label "GitHub" .
+
+dlprov:Herbarium_Senckenbergianum a dlprov:Dataset ;
+    rdfs:label "Herbarium Senckenbergianum" .
+
+dlprov:ImageNet a dlprov:Dataset ;
+    rdfs:label "ImageNet" .
+
+dlprov:PyTorch a dlprov:Framework ;
+    rdfs:label "PyTorch" .
+
+dlprov:Stochastic_Gradient_Descent a dlprov:OptimizationTechnique ;
+    rdfs:label "Stochastic Gradient Descent" .
+
+dlprov:TITAN_Xp_GPUs a dlprov:HardwareResource ;
+    rdfs:label "TITAN Xp GPUs" .
+
+dlprov:anchor_scales a dlprov:Hyperparameter ;
+    rdfs:label "anchor scales" .
+
+dlprov:aspect_ratios a dlprov:Hyperparameter ;
+    rdfs:label "aspect ratios" .
+
+dlprov:classification a dlprov:ModelPurpose ;
+    rdfs:label "classification" .
+
+dlprov:cleaning a dlprov:PreprocessingStep ;
+    rdfs:label "cleaning" .
+
+dlprov:image a dlprov:DataFormat ;
+    rdfs:label "image" .
+
+dlprov:learning_rate a dlprov:Hyperparameter ;
+    rdfs:label "learning rate" .
+
+dlprov:localization a dlprov:ModelPurpose ;
+    rdfs:label "localization" .
+
+dlprov:momentum a dlprov:Hyperparameter ;
+    rdfs:label "momentum" .
+
+dlprov:normalization a dlprov:PreprocessingStep ;
+    rdfs:label "normalization" .
+
+dlprov:object_detection a dlprov:ModelPurpose ;
+    rdfs:label "object detection" .
+
+dlprov:resizing a dlprov:PreprocessingStep ;
+    rdfs:label "resizing" .
+
+dlprov:scaling a dlprov:PreprocessingStep ;
+    rdfs:label "scaling" .
+
+dlprov:thresholds_for_non-maximum_suppression a dlprov:Hyperparameter ;
+    rdfs:label "thresholds for non-maximum suppression" .
+
+dlprov:CodeRepository a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+

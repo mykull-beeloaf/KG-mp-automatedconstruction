@@ -1,0 +1,85 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Challenge_1 a dlprov:Dataset ;
+    rdfs:label "Challenge 1" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:ImageNet a dlprov:Dataset ;
+    rdfs:label "ImageNet" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:average_certainty_rate a dlprov:Metric ;
+    rdfs:label "average certainty rate" .
+
+dlprov:classification_of_species_of_Philippine_forest_frogs_based_on_their_frequency_distributions_of_individual_call_notes a dlprov:ModelPurpose ;
+    rdfs:label "classification of species of Philippine forest frogs based on their frequency distributions of individual call notes" .
+
+dlprov:cleaning a dlprov:PreprocessingStep ;
+    rdfs:label "cleaning" .
+
+dlprov:correct_identification_rate a dlprov:Metric,
+        dlprov:ModelPerformance ;
+    rdfs:label "correct identification rate" .
+
+dlprov:identification_rate a dlprov:OptimizationTechnique ;
+    rdfs:label "identification rate" .
+
+dlprov:image a dlprov:DataFormat ;
+    rdfs:label "image" .
+
+dlprov:normalization a dlprov:PreprocessingStep ;
+    rdfs:label "normalization" .
+
+dlprov:number_of_training_steps a dlprov:Hyperparameter ;
+    rdfs:label "number of training steps" .
+
+dlprov:processing_time a dlprov:Metric,
+        dlprov:ModelPerformance,
+        dlprov:OptimizationTechnique ;
+    rdfs:label "processing time" .
+
+dlprov:scaling a dlprov:PreprocessingStep ;
+    rdfs:label "scaling" .
+
+dlprov:spectrograms a dlprov:DataFormat ;
+    rdfs:label "spectrograms" .
+
+dlprov:validation_parameter a dlprov:Hyperparameter ;
+    rdfs:label "validation parameter" .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPerformance a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

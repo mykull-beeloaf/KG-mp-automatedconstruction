@@ -1,0 +1,76 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "Dropout rate" .
+
+dlprov:F1-score a dlprov:Metric ;
+    rdfs:label "F1-score" .
+
+dlprov:Family-level_classification_of_below-ground_bulk_samples_of_Coleoptera a dlprov:Purpose ;
+    rdfs:label "Family-level classification of below-ground bulk samples of Coleoptera" .
+
+dlprov:Keras a dlprov:Framework ;
+    rdfs:label "Keras" .
+
+dlprov:Korea_Forest_Service_tree_plot_datasets a dlprov:Dataset ;
+    rdfs:label "Korea Forest Service tree plot datasets" .
+
+dlprov:Multitemporal_remote_sensing_data a dlprov:Dataset ;
+    rdfs:label "Multitemporal remote sensing data" .
+
+dlprov:Number_of_units_in_the_two_FC_layers a dlprov:Hyperparameter ;
+    rdfs:label "Number of units in the two FC layers" .
+
+dlprov:RMSE a dlprov:Metric ;
+    rdfs:label "RMSE" .
+
+dlprov:SFIT a dlprov:RegularizationMethod ;
+    rdfs:label "SFIT" .
+
+dlprov:Stratified_splitting a dlprov:PreprocessingStep ;
+    rdfs:label "Stratified splitting" .
+
+dlprov:Surveyed_and_estimated_richness_information_collected_in_South_Korea a dlprov:Dataset ;
+    rdfs:label "Surveyed and estimated richness information collected in South Korea" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:accuracy a dlprov:Metric ;
+    rdfs:label "accuracy" .
+
+dlprov:convolutional_neural_network a dlprov:DeeplearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:multiclass_precision a dlprov:Metric ;
+    rdfs:label "multiclass precision" .
+
+dlprov:multiclass_recall_rate a dlprov:Metric ;
+    rdfs:label "multiclass recall rate" .
+
+dlprov:DeeplearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

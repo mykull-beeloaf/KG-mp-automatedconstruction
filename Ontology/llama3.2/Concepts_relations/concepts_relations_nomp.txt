@@ -1,0 +1,4 @@
+Concepts: DataFormat, DataAugmentationTechnique, Dataset, PreprocessingStep, CodeRepository, DeepLearningModel, Hyperparameter, OptimizationTechnique, RegularizationMethod, Framework, HardwareResource, Metric, Purpose
+Relationships: isDataFormatOf, isDataAugmentationTechniqueAppliedTo, isDatasetUsedIn, isPreprocessingStepInvolvedIn, hasCodeRepositoryLink, isDeepLearningModelUsedIn, hasHyperparameterFor, isOptimizationTechniqueAppliedIn, isRegularizationMethodUsedFor, isFrameworkUsedToBuild, usesHardwareResourceForTraining, evaluatesTo
+DataProperties: codeRepositoryLink, modelPurpose
+InverseProperties: dataFormatOf, datasetUsedIn, preprocessingStepInvolvedIn, frameworkUsedToBuild, optimizationTechniqueAppliedIn, regularizationMethodUsedFor

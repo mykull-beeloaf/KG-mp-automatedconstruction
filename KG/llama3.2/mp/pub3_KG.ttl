@@ -1,0 +1,91 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeeplearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Data_augmentation a dlprov:PreprocessingStep ;
+    rdfs:label "Data augmentation" .
+
+dlprov:Diverse_dataset_used_for_training_the_deep_learning_model a dlprov:Dataset ;
+    rdfs:label "Diverse dataset used for training the deep learning model" .
+
+dlprov:Dropout a dlprov:RegularizationMethod ;
+    rdfs:label "Dropout" .
+
+dlprov:Dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "Dropout rate" .
+
+dlprov:F1-score a dlprov:Metric ;
+    rdfs:label "F1-score" .
+
+dlprov:Family-level_classification_of_below-ground_bulk_samples_of_Coleoptera a dlprov:Purpose ;
+    rdfs:label "Family-level classification of below-ground bulk samples of Coleoptera" .
+
+dlprov:Normalization a dlprov:PreprocessingStep ;
+    rdfs:label "Normalization" .
+
+dlprov:Number_of_units_in_the_two_FC_layers a dlprov:Hyperparameter ;
+    rdfs:label "Number of units in the two FC layers" .
+
+dlprov:Oversampling_undersampling a dlprov:PreprocessingStep ;
+    rdfs:label "Oversampling/undersampling" .
+
+dlprov:Stratified_splitting a dlprov:PreprocessingStep ;
+    rdfs:label "Stratified splitting" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:accuracy a dlprov:Metric ;
+    rdfs:label "accuracy" .
+
+dlprov:multiclass_precision a dlprov:Metric ;
+    rdfs:label "multiclass precision" .
+
+dlprov:multiclass_recall_rate a dlprov:Metric ;
+    rdfs:label "multiclass recall rate" .
+
+dlprov:oversampling_undersampling a dlprov:DataAugmentationTechnique ;
+    rdfs:label "oversampling/undersampling" .
+
+dlprov:preprocessing_steps a dlprov:DeepLearningPipeline ;
+    rdfs:label "preprocessing steps" .
+
+dlprov:stratified_splitting a dlprov:DataAugmentationTechnique ;
+    rdfs:label "stratified splitting" .
+
+dlprov:training_a_convolutional_neural_network a dlprov:DeepLearningPipeline ;
+    rdfs:label "training a convolutional neural network" .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeeplearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

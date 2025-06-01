@@ -1,0 +1,73 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:CSV a dlprov:DataFormat ;
+    rdfs:label "CSV" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Dropout a dlprov:RegularizationMethod ;
+    rdfs:label "Dropout" .
+
+dlprov:Family-level_classification_of_below-ground_bulk_samples_of_Coleoptera a dlprov:Purpose ;
+    rdfs:label "Family-level classification of below-ground bulk samples of Coleoptera" .
+
+dlprov:Forest_Service_Tree_Plot_Datasets a dlprov:Dataset ;
+    rdfs:label "Forest Service Tree Plot Datasets" .
+
+dlprov:Graphics_Card a dlprov:HardwareResource ;
+    rdfs:label "Graphics Card" .
+
+dlprov:JSON a dlprov:DataFormat ;
+    rdfs:label "JSON" .
+
+dlprov:Keras a dlprov:Framework ;
+    rdfs:label "Keras" .
+
+dlprov:Number_of_units_in_the_two_FC_layers%3A_128 a dlprov:Hyperparameter ;
+    rdfs:label "Number of units in the two FC layers: 128" .
+
+dlprov:Root_Mean_Square_Error a dlprov:Metric ;
+    rdfs:label "Root Mean Square Error" .
+
+dlprov:South_Korea_Species_Richness_Dataset a dlprov:Dataset ;
+    rdfs:label "South Korea Species Richness Dataset" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:dropout_rate%3A_0.5 a dlprov:Hyperparameter ;
+    rdfs:label "dropout rate: 0.5" .
+
+dlprov:pandas_DataFrame a dlprov:DataFormat ;
+    rdfs:label "pandas DataFrame" .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+

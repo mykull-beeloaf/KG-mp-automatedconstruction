@@ -1,0 +1,136 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:1%3A1 a dlprov:PreprocessingStep ;
+    rdfs:label "1:1" .
+
+dlprov:1024%5D_each_with_three_aspect_ratios_of_%5B1%3A2 a dlprov:PreprocessingStep ;
+    rdfs:label "1024] each with three aspect ratios of [1:2" .
+
+dlprov:128 a dlprov:PreprocessingStep ;
+    rdfs:label "128" .
+
+dlprov:2%3A1%5D a dlprov:PreprocessingStep ;
+    rdfs:label "2:1]" .
+
+dlprov:256 a dlprov:PreprocessingStep ;
+    rdfs:label "256" .
+
+dlprov:512 a dlprov:PreprocessingStep ;
+    rdfs:label "512" .
+
+dlprov:64 a dlprov:PreprocessingStep ;
+    rdfs:label "64" .
+
+dlprov:9600_by_6500_pixels a dlprov:DataFormat ;
+    rdfs:label "9600 by 6500 pixels" .
+
+dlprov:Average_size_of_scans a dlprov:Metric ;
+    rdfs:label "Average size of scans" .
+
+dlprov:Detectron2 a dlprov:Framework ;
+    rdfs:label "Detectron2" .
+
+dlprov:Faster_R-CNN a dlprov:DeepLearningModel ;
+    rdfs:label "Faster R-CNN" .
+
+dlprov:GitHub a dlprov:CodeRepositoryLink ;
+    rdfs:label "GitHub" .
+
+dlprov:Herbarium_Senckenbergianum a dlprov:Dataset ;
+    rdfs:label "Herbarium Senckenbergianum" .
+
+dlprov:PyTorch a dlprov:Framework ;
+    rdfs:label "PyTorch" .
+
+dlprov:Stochastic_Gradient_Descent a dlprov:OptimizationTechnique ;
+    rdfs:label "Stochastic Gradient Descent" .
+
+dlprov:TITAN_Xp a dlprov:HardwareResource ;
+    rdfs:label "TITAN Xp" .
+
+dlprov:anchor_generator_scales a dlprov:Hyperparameter ;
+    rdfs:label "anchor generator scales" .
+
+dlprov:anchor_generator_with_six_anchor_scales_%5B32 a dlprov:PreprocessingStep ;
+    rdfs:label "anchor generator with six anchor scales [32" .
+
+dlprov:aspect_ratio a dlprov:Metric ;
+    rdfs:label "aspect ratio" .
+
+dlprov:detection_and_localising_each_object_with_a_bounding_box_on_the_image_and_classify_it a dlprov:Purpose ;
+    rdfs:label "detection and localising each object with a bounding box on the image and classify it" .
+
+dlprov:evaluated_on_the_test_subset_of_155_images a dlprov:Performance ;
+    rdfs:label "evaluated on the test subset of 155 images" .
+
+dlprov:faster_R-CNN a dlprov:DeepLearningPipeline ;
+    rdfs:label "faster R-CNN" .
+
+dlprov:herbarium_scans a dlprov:DataFormat ;
+    rdfs:label "herbarium scans" .
+
+dlprov:learning_rate_of_0.0025 a dlprov:Hyperparameter ;
+    rdfs:label "learning rate of 0.0025" .
+
+dlprov:momentum_of_0.9 a dlprov:Hyperparameter ;
+    rdfs:label "momentum of 0.9" .
+
+dlprov:non-maximum_suppression a dlprov:Metric ;
+    rdfs:label "non-maximum suppression" .
+
+dlprov:non-maximum_suppression_thresholds a dlprov:Hyperparameter ;
+    rdfs:label "non-maximum suppression thresholds" .
+
+dlprov:object_detection_and_localisation a dlprov:Purpose ;
+    rdfs:label "object detection and localisation" .
+
+dlprov:predicted_plant_organs_on_another_un-annotated_independent_dataset_to_evaluate_our_method a dlprov:Performance ;
+    rdfs:label "predicted plant organs on another un-annotated independent dataset to evaluate our method" .
+
+dlprov:three_GPUs a dlprov:HardwareResource ;
+    rdfs:label "three GPUs" .
+
+dlprov:thresholds_for_non-maximum_suppression a dlprov:PreprocessingStep ;
+    rdfs:label "thresholds for non-maximum suppression" .
+
+dlprov:CodeRepositoryLink a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:Performance a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

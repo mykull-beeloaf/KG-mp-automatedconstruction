@@ -1,0 +1,61 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Benthoz15 a dlprov:Dataset ;
+    rdfs:label "Benthoz15" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:ImageNet a dlprov:Dataset ;
+    rdfs:label "ImageNet" .
+
+dlprov:accuracy a dlprov:Metric ;
+    rdfs:label "accuracy" .
+
+dlprov:cleaning a dlprov:PreprocessingStep ;
+    rdfs:label "cleaning" .
+
+dlprov:coral_reef_classification a dlprov:ModelPurpose ;
+    rdfs:label "coral reef classification" .
+
+dlprov:data_augmentation a dlprov:PreprocessingStep ;
+    rdfs:label "data augmentation" .
+
+dlprov:images a dlprov:DataFormat ;
+    rdfs:label "images" .
+
+dlprov:normalization a dlprov:PreprocessingStep ;
+    rdfs:label "normalization" .
+
+dlprov:pixel-level_annotation a dlprov:DataAnnotationTechnique ;
+    rdfs:label "pixel-level annotation" .
+
+dlprov:scaling a dlprov:PreprocessingStep ;
+    rdfs:label "scaling" .
+
+dlprov:semantic_segmentation a dlprov:DataAnnotationTechnique ;
+    rdfs:label "semantic segmentation" .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataAnnotationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+

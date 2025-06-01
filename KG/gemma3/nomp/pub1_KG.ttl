@@ -1,0 +1,91 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:F1-score a dlprov:Metric ;
+    rdfs:label "F1-score" .
+
+dlprov:GPU a dlprov:HardwareResource ;
+    rdfs:label "GPU" .
+
+dlprov:The_entire_system_utilizing_deep_learning_for_species_detection_and_activity_rate_classification a dlprov:DeepLearningPipeline ;
+    rdfs:label "The entire system utilizing deep learning for species detection and activity rate classification" .
+
+dlprov:The_model%27s_ability_to_classify_endangered_species_and_the_scale_of_the_analysis_it%E2%80%99s_designed_to_encompass a dlprov:Performance ;
+    rdfs:label "The model's ability to classify endangered species and the scale of the analysis it’s designed to encompass" .
+
+dlprov:accuracy a dlprov:Metric ;
+    rdfs:label "accuracy" .
+
+dlprov:audio a dlprov:DataFormat ;
+    rdfs:label "audio" .
+
+dlprov:convolutional_neural_network a dlprov:DeepLearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:dozens_of_species_signals_and_event_types_across_ongoing_projects a dlprov:Dataset ;
+    rdfs:label "dozens of species signals and event types across ongoing projects" .
+
+dlprov:dropout a dlprov:RegularizationMethod ;
+    rdfs:label "dropout" .
+
+dlprov:dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "dropout rate" .
+
+dlprov:gradient_descent a dlprov:OptimizationTechnique ;
+    rdfs:label "gradient descent" .
+
+dlprov:number_of_units_in_the_two_FC_layers a dlprov:Hyperparameter ;
+    rdfs:label "number of units in the two FC layers" .
+
+dlprov:or_in_some_cases a dlprov:Purpose ;
+    rdfs:label "or in some cases" .
+
+dlprov:precision a dlprov:Metric ;
+    rdfs:label "precision" .
+
+dlprov:recall a dlprov:Metric ;
+    rdfs:label "recall" .
+
+dlprov:the_sounds_of_birds_colliding_with_energy_infrastructure a dlprov:Purpose ;
+    rdfs:label "the sounds of birds colliding with energy infrastructure" .
+
+dlprov:to_classify_the_presence_or_absence_and_activity_rates_of_a_number_of_different_endangered_species a dlprov:Purpose ;
+    rdfs:label "to classify the presence or absence and activity rates of a number of different endangered species" .
+
+dlprov:visual a dlprov:DataFormat ;
+    rdfs:label "visual" .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Performance a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

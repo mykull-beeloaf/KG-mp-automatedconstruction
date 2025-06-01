@@ -1,0 +1,109 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:910_images_sampled_across_seven_phenotypically_disparate_reef_fish_families a dlprov:Dataset ;
+    rdfs:label "910 images sampled across seven phenotypically disparate reef fish families" .
+
+dlprov:GeForce_RTX_2080_GPU a dlprov:HardwareResource ;
+    rdfs:label "GeForce RTX 2080 GPU" .
+
+dlprov:Not_Specified_in_Text a dlprov:CodeRepositoryLink ;
+    rdfs:label "Not Specified in Text" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:automate_image_segmentation a dlprov:ModelPurpose ;
+    rdfs:label "automate image segmentation" .
+
+dlprov:convolutional_neural_network a dlprov:DeepLearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:dropout a dlprov:RegularizationMethod ;
+    rdfs:label "dropout" .
+
+dlprov:dropout_rate a dlprov:Hyperparameter ;
+    rdfs:label "dropout rate" .
+
+dlprov:evaluation_using_metrics_such_as_Intersection_over_Union a dlprov:PreprocessingStep ;
+    rdfs:label "evaluation using metrics such as Intersection over Union" .
+
+dlprov:flipping a dlprov:DataAugmentationTechnique ;
+    rdfs:label "flipping" .
+
+dlprov:frequency-weighted_IoU a dlprov:PerformanceMetric ;
+    rdfs:label "frequency-weighted IoU" .
+
+dlprov:image_segmentation a dlprov:DeepLearningPipeline ;
+    rdfs:label "image segmentation" .
+
+dlprov:images a dlprov:DataFormat ;
+    rdfs:label "images" .
+
+dlprov:learning_rates a dlprov:Hyperparameter ;
+    rdfs:label "learning rates" .
+
+dlprov:mean_IoU a dlprov:PerformanceMetric ;
+    rdfs:label "mean IoU" .
+
+dlprov:mean_accuracy a dlprov:PerformanceMetric ;
+    rdfs:label "mean accuracy" .
+
+dlprov:number_of_units_in_the_two_FC_layers a dlprov:Hyperparameter ;
+    rdfs:label "number of units in the two FC layers" .
+
+dlprov:pixel_accuracy a dlprov:PerformanceMetric ;
+    rdfs:label "pixel accuracy" .
+
+dlprov:segmentation a dlprov:PreprocessingStep ;
+    rdfs:label "segmentation" .
+
+dlprov:three-stage_training_with_different_learning_rates_and_weight_decay a dlprov:OptimizationTechnique ;
+    rdfs:label "three-stage training with different learning rates and weight decay" .
+
+dlprov:weight_decay a dlprov:Hyperparameter ;
+    rdfs:label "weight decay" .
+
+dlprov:CodeRepositoryLink a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:PerformanceMetric a owl:Class,
+        dlprov:Concept .
+

@@ -1,0 +1,61 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:BatchSize a dlprov:Hyperparameter ;
+    rdfs:label "BatchSize" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeeplearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Dropout a dlprov:RegularizationMethod ;
+    rdfs:label "Dropout" .
+
+dlprov:Energy_infrastructure_dataset a dlprov:Dataset ;
+    rdfs:label "Energy infrastructure dataset" .
+
+dlprov:F1-score a dlprov:Metric ;
+    rdfs:label "F1-score" .
+
+dlprov:Family-level_classification_of_below-ground_bulk_samples_of_Coleoptera a dlprov:Purpose ;
+    rdfs:label "Family-level classification of below-ground bulk samples of Coleoptera" .
+
+dlprov:LearningRate a dlprov:Hyperparameter ;
+    rdfs:label "LearningRate" .
+
+dlprov:accuracy a dlprov:Metric ;
+    rdfs:label "accuracy" .
+
+dlprov:image_rotation a dlprov:DataAugmentationTechnique ;
+    rdfs:label "image rotation" .
+
+dlprov:multiclass_precision a dlprov:Metric ;
+    rdfs:label "multiclass precision" .
+
+dlprov:multiclass_recall_rate a dlprov:Metric ;
+    rdfs:label "multiclass recall rate" .
+
+dlprov:scaling a dlprov:DataAugmentationTechnique ;
+    rdfs:label "scaling" .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeeplearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

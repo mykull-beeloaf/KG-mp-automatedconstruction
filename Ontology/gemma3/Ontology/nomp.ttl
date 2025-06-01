@@ -1,0 +1,178 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+### Class Definitions ###
+dlprov:DeepLearningPipeline a owl:Class, prov:Activity ;
+    rdfs:label "DeepLearningPipeline" ;
+    rdfs:subClassOf prov:Activity ;
+    rdfs:comment "Represents a complete deep learning pipeline workflow" .
+
+dlprov:DataFormat a owl:Class, prov:Entity ;
+    rdfs:label "DataFormat" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Represents the format of input/output data" .
+
+dlprov:DataAugmentationTechnique a owl:Class, prov:Entity ;
+    rdfs:label "DataAugmentationTechnique" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Techniques used to augment training data" .
+
+dlprov:Dataset a owl:Class, prov:Entity ;
+    rdfs:label "Dataset" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Collection of data used for training/validation" .
+
+dlprov:PreprocessingStep a owl:Class, prov:Activity ;
+    rdfs:label "PreprocessingStep" ;
+    rdfs:subClassOf prov:Activity ;
+    rdfs:comment "Data transformation steps before training" .
+
+dlprov:CodeRepositoryLink a owl:Class, prov:Entity ;
+    rdfs:label "CodeRepositoryLink" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Reference to source code repository" .
+
+dlprov:DeepLearningModel a owl:Class, prov:Entity ;
+    rdfs:label "DeepLearningModel" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Trained machine learning model artifact" .
+
+dlprov:Hyperparameter a owl:Class, prov:Entity ;
+    rdfs:label "Hyperparameter" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Model configuration parameters" .
+
+dlprov:OptimizationTechnique a owl:Class, prov:Entity ;
+    rdfs:label "OptimizationTechnique" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Optimization algorithms used" .
+
+dlprov:RegularizationMethod a owl:Class, prov:Entity ;
+    rdfs:label "RegularizationMethod" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Techniques to prevent overfitting" .
+
+dlprov:Framework a owl:Class, prov:Entity ;
+    rdfs:label "Framework" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Software framework used" .
+
+dlprov:HardwareResource a owl:Class, prov:Entity ;
+    rdfs:label "HardwareResource" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Compute resources utilized" .
+
+dlprov:Metric a owl:Class, prov:Entity ;
+    rdfs:label "Metric" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Performance evaluation metrics" .
+
+dlprov:Performance a owl:Class, prov:Entity ;
+    rdfs:label "Performance" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Model performance characteristics" .
+
+dlprov:Purpose a owl:Class, prov:Entity ;
+    rdfs:label "Purpose" ;
+    rdfs:subClassOf prov:Entity ;
+    rdfs:comment "Intended use case of the model" .
+
+### Object Properties ###
+dlprov:hasComponent a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:DeepLearningModel ;
+    rdfs:label "hasComponent" .
+
+dlprov:usesDataset a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:Dataset ;
+    rdfs:label "usesDataset" .
+
+dlprov:usesDataFormat a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:DataFormat ;
+    rdfs:label "usesDataFormat" .
+
+dlprov:appliesDataAugmentation a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:DataAugmentationTechnique ;
+    rdfs:label "appliesDataAugmentation" .
+
+dlprov:hasPreprocessingStep a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:PreprocessingStep ;
+    rdfs:label "hasPreprocessingStep" .
+
+dlprov:usesOptimizationTechnique a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:OptimizationTechnique ;
+    rdfs:label "usesOptimizationTechnique" .
+
+dlprov:usesRegularizationMethod a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:RegularizationMethod ;
+    rdfs:label "usesRegularizationMethod" .
+
+dlprov:usesFramework a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:Framework ;
+    rdfs:label "usesFramework" .
+
+dlprov:hasCodeRepository a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:CodeRepositoryLink ;
+    rdfs:label "hasCodeRepository" .
+
+dlprov:hasPerformanceMetric a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:Metric ;
+    rdfs:label "hasPerformanceMetric" .
+
+dlprov:hasPurpose a owl:ObjectProperty ;
+    rdfs:domain dlprov:DeepLearningPipeline ;
+    rdfs:range dlprov:Purpose ;
+    rdfs:label "hasPurpose" .
+
+### Datatype Properties ###
+dlprov:codeRepositoryURL a owl:DatatypeProperty ;
+    rdfs:domain dlprov:CodeRepositoryLink ;
+    rdfs:range xsd:string ;
+    rdfs:label "codeRepositoryURL" .
+
+dlprov:modelType a owl:DatatypeProperty ;
+    rdfs:domain dlprov:DeepLearningModel ;
+    rdfs:range xsd:string ;
+    rdfs:label "modelType" .
+
+dlprov:hyperparameterValue a owl:DatatypeProperty ;
+    rdfs:domain dlprov:Hyperparameter ;
+    rdfs:range xsd:string ;
+    rdfs:label "hyperparameterValue" .
+
+dlprov:optimizationAlgorithm a owl:DatatypeProperty ;
+    rdfs:domain dlprov:OptimizationTechnique ;
+    rdfs:range xsd:string ;
+    rdfs:label "optimizationAlgorithm" .
+
+dlprov:regularizationType a owl:DatatypeProperty ;
+    rdfs:domain dlprov:RegularizationMethod ;
+    rdfs:range xsd:string ;
+    rdfs:label "regularizationType" .
+
+dlprov:frameworkName a owl:DatatypeProperty ;
+    rdfs:domain dlprov:Framework ;
+    rdfs:range xsd:string ;
+    rdfs:label "frameworkName" .
+
+dlprov:hardwareSpec a owl:DatatypeProperty ;
+    rdfs:domain dlprov:HardwareResource ;
+    rdfs:range xsd:string ;
+    rdfs:label "hardwareSpec" .
+
+dlprov:metricValue a owl:DatatypeProperty ;
+    rdfs:domain dlprov:Metric ;
+    rdfs:range xsd:string ;
+    rdfs:label "metricValue" .

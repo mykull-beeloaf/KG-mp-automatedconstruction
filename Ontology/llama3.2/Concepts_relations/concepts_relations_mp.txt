@@ -1,0 +1,4 @@
+Concepts: DataFormat, DeepLearningPipeline, DataAugmentationTechnique, Dataset, PreprocessingStep, CodeRepository, DeeplearningModel, Hyperparameter, OptimizationTechnique, RegularizationMethod, Framework, HardwareResource, Metric, Purpose
+Relationships: hasDataFormat, isPartOfDeepLearningPipeline, appliesDataAugmentationTo, isUsedInDataset, involvesPreprocessingStepBeforeTraining, providesCodeRepositoryLinkFor, isTypeOfDeeplearningModel, usesHyperparameterIn, appliesOptimizationTechniqueTo, usesRegularizationMethodToPreventOverfitting, usedByFramework, utilizedHardwareResourceFor, evaluatedUsingMetric, servesPurpose
+DataProperties: codeRepositoryLink, modelAccuracy
+InverseProperties: isDataFormatOf, isDatasetOf, isPreprocessingStepOf, providesCodeRepositoryLinkFor, isTypeOfDeeplearningModelOf, usesHyperparameterIn, appliesOptimizationTechniqueTo, usesRegularizationMethodToPreventOverfitting

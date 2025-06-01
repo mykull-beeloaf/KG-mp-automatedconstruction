@@ -1,0 +1,87 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:100%25_correct_identification_rate_for_some_species a dlprov:Performance ;
+    rdfs:label "100% correct identification rate for some species" .
+
+dlprov:Calibration_of_models_for_classification_challenges_using_different_numbers_of_training_steps_and_considering_two_factors%3A_correct_identification_rate_and_processing_time a dlprov:PreprocessingStep ;
+    rdfs:label "Calibration of models for classification challenges using different numbers of training steps and considering two factors: correct identification rate and processing time" .
+
+dlprov:Classification_of_Philippine_forest_frog_species_based_on_their_call_notes a dlprov:Purpose ;
+    rdfs:label "Classification of Philippine forest frog species based on their call notes" .
+
+dlprov:Confusion_Matrix a dlprov:Metric ;
+    rdfs:label "Confusion Matrix" .
+
+dlprov:Convolutional_Neural_Network a dlprov:DeepLearningModel ;
+    rdfs:label "Convolutional Neural Network" .
+
+dlprov:Correct_identification_rate a dlprov:Metric ;
+    rdfs:label "Correct identification rate" .
+
+<https://w3id.org/dlprov#Frequency_distributions_of_individual_call_notes.> a dlprov:DataFormat ;
+    rdfs:label "Frequency distributions of individual call notes." .
+
+dlprov:Leave-one-out_cross-validation_technique a dlprov:OptimizationTechnique ;
+    rdfs:label "Leave-one-out cross-validation technique" .
+
+dlprov:Not_explicitly_mentioned_in_the_text a dlprov:CodeRepositoryLink,
+        dlprov:HardwareResource,
+        dlprov:RegularizationMethod ;
+    rdfs:label "Not explicitly mentioned in the text" .
+
+dlprov:Number_of_training_steps_and_validation_parameter a dlprov:Hyperparameter ;
+    rdfs:label "Number of training steps and validation parameter" .
+
+dlprov:Philippine_forest_frog_call_data a dlprov:Dataset ;
+    rdfs:label "Philippine forest frog call data" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+<https://w3id.org/dlprov#The_entire_system_for_classifying_frog_calls_using_a_deep_learning_model.> a dlprov:DeepLearningPipeline ;
+    rdfs:label "The entire system for classifying frog calls using a deep learning model." .
+
+dlprov:CodeRepositoryLink a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:Performance a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:Purpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:RegularizationMethod a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

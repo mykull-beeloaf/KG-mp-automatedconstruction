@@ -1,0 +1,166 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:Adam a dlprov:OptimizationTechnique ;
+    rdfs:label "Adam" .
+
+dlprov:BitBucket a dlprov:CodeRepository ;
+    rdfs:label "BitBucket" .
+
+dlprov:CIFAR a dlprov:Dataset ;
+    rdfs:label "CIFAR" .
+
+dlprov:CNN a dlprov:DeepLearningModel ;
+    rdfs:label "CNN" .
+
+dlprov:COCO a dlprov:Dataset ;
+    rdfs:label "COCO" .
+
+dlprov:CSV a dlprov:DataFormat ;
+    rdfs:label "CSV" .
+
+dlprov:Faster_R-CNN a dlprov:DeepLearningModel ;
+    rdfs:label "Faster R-CNN" .
+
+dlprov:GeForce_RTX_2080_GPU a dlprov:HardwareResource ;
+    rdfs:label "GeForce RTX 2080 GPU" .
+
+dlprov:GitHub a dlprov:CodeRepository ;
+    rdfs:label "GitHub" .
+
+dlprov:GitLab a dlprov:CodeRepository ;
+    rdfs:label "GitLab" .
+
+dlprov:ImageNet a dlprov:Dataset ;
+    rdfs:label "ImageNet" .
+
+dlprov:MNIST a dlprov:Dataset ;
+    rdfs:label "MNIST" .
+
+dlprov:Mask_R-CNN a dlprov:DeepLearningModel ;
+    rdfs:label "Mask R-CNN" .
+
+dlprov:PyTorch a dlprov:Framework ;
+    rdfs:label "PyTorch" .
+
+dlprov:RNN a dlprov:DeepLearningModel ;
+    rdfs:label "RNN" .
+
+dlprov:SGD a dlprov:OptimizationTechnique ;
+    rdfs:label "SGD" .
+
+dlprov:Sashimi_toolkit a dlprov:DeepLearningPipeline ;
+    rdfs:label "Sashimi toolkit" .
+
+dlprov:TensorFlow a dlprov:Framework ;
+    rdfs:label "TensorFlow" .
+
+dlprov:Transformer a dlprov:DeepLearningModel ;
+    rdfs:label "Transformer" .
+
+dlprov:audio a dlprov:DataFormat ;
+    rdfs:label "audio" .
+
+dlprov:automation_of_image_segmentation a dlprov:ModelPurpose ;
+    rdfs:label "automation of image segmentation" .
+
+dlprov:classification a dlprov:ModelPurpose ;
+    rdfs:label "classification" .
+
+dlprov:cleaning a dlprov:PreprocessingStep ;
+    rdfs:label "cleaning" .
+
+dlprov:desktop_computer a dlprov:HardwareResource ;
+    rdfs:label "desktop computer" .
+
+dlprov:detection a dlprov:ModelPurpose ;
+    rdfs:label "detection" .
+
+dlprov:flipping a dlprov:DataAugmentationTechnique ;
+    rdfs:label "flipping" .
+
+dlprov:frequency-weighted_IoU a dlprov:Metric ;
+    rdfs:label "frequency-weighted IoU" .
+
+dlprov:image_segmentation a dlprov:ModelPurpose ;
+    rdfs:label "image segmentation" .
+
+dlprov:images a dlprov:DataFormat ;
+    rdfs:label "images" .
+
+dlprov:learning_momentum a dlprov:Hyperparameter ;
+    rdfs:label "learning momentum" .
+
+dlprov:learning_rate a dlprov:Hyperparameter ;
+    rdfs:label "learning rate" .
+
+dlprov:mean_IoU a dlprov:Metric ;
+    rdfs:label "mean IoU" .
+
+dlprov:mean_accuracy a dlprov:Metric ;
+    rdfs:label "mean accuracy" .
+
+dlprov:normalization a dlprov:PreprocessingStep ;
+    rdfs:label "normalization" .
+
+dlprov:number_of_epochs a dlprov:Hyperparameter ;
+    rdfs:label "number of epochs" .
+
+dlprov:pixel_accuracy a dlprov:Metric ;
+    rdfs:label "pixel accuracy" .
+
+dlprov:scaling a dlprov:PreprocessingStep ;
+    rdfs:label "scaling" .
+
+dlprov:stochastic_gradient_descent_with_backpropagation a dlprov:OptimizationTechnique ;
+    rdfs:label "stochastic gradient descent with backpropagation" .
+
+dlprov:validation_loss a dlprov:Metric ;
+    rdfs:label "validation loss" .
+
+dlprov:video a dlprov:DataFormat ;
+    rdfs:label "video" .
+
+dlprov:weight_decay a dlprov:Hyperparameter ;
+    rdfs:label "weight decay" .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningPipeline a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:CodeRepository a owl:Class,
+        dlprov:Concept .
+
+dlprov:OptimizationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:Hyperparameter a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+

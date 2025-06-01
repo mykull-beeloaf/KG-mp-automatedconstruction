@@ -1,0 +1,88 @@
+@prefix dlprov: <https://w3id.org/dlprov#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+dlprov:CUDA-CuDNN a dlprov:Framework ;
+    rdfs:label "CUDA-CuDNN" .
+
+dlprov:Dice_coefficient a dlprov:Metric ;
+    rdfs:label "Dice coefficient" .
+
+dlprov:Keras a dlprov:Framework ;
+    rdfs:label "Keras" .
+
+dlprov:PyTorch a dlprov:Framework ;
+    rdfs:label "PyTorch" .
+
+dlprov:TITAN-X_GPU a dlprov:HardwareResource ;
+    rdfs:label "TITAN-X GPU" .
+
+dlprov:U-net_deep_autoencoder a dlprov:DeepLearningModel ;
+    rdfs:label "U-net deep autoencoder" .
+
+dlprov:audio_spectrograms a dlprov:DataFormat ;
+    rdfs:label "audio spectrograms" .
+
+dlprov:cleaning a dlprov:PreprocessingStep ;
+    rdfs:label "cleaning" .
+
+dlprov:convolutional_neural_network a dlprov:DeepLearningModel ;
+    rdfs:label "convolutional neural network" .
+
+dlprov:data_augmentation a dlprov:PreprocessingStep ;
+    rdfs:label "data augmentation" .
+
+dlprov:grey-coloured_1-channel_images a dlprov:DataFormat ;
+    rdfs:label "grey-coloured 1-channel images" .
+
+dlprov:mean_Dice_coefficient_loss_function a dlprov:Metric ;
+    rdfs:label "mean Dice coefficient loss function" .
+
+dlprov:normalization a dlprov:PreprocessingStep ;
+    rdfs:label "normalization" .
+
+dlprov:random_displacements_at_the_maximum_of_the_10%25_of_the_image a dlprov:DataAugmentationTechnique ;
+    rdfs:label "random displacements at the maximum of the 10% of the image" .
+
+dlprov:random_rotations_between_-5_and_5_degrees a dlprov:DataAugmentationTechnique ;
+    rdfs:label "random rotations between -5 and 5 degrees" .
+
+dlprov:recordings_void_of_any_bird_activity a dlprov:Dataset ;
+    rdfs:label "recordings void of any bird activity" .
+
+dlprov:scaling a dlprov:PreprocessingStep ;
+    rdfs:label "scaling" .
+
+dlprov:segmentation_of_bird_vocalizations_from_audio_spectrograms a dlprov:ModelPurpose ;
+    rdfs:label "segmentation of bird vocalizations from audio spectrograms" .
+
+dlprov:spectrogram_figures_of_bird_recordings a dlprov:Dataset ;
+    rdfs:label "spectrogram figures of bird recordings" .
+
+dlprov:HardwareResource a owl:Class,
+        dlprov:Concept .
+
+dlprov:ModelPurpose a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataAugmentationTechnique a owl:Class,
+        dlprov:Concept .
+
+dlprov:DataFormat a owl:Class,
+        dlprov:Concept .
+
+dlprov:Dataset a owl:Class,
+        dlprov:Concept .
+
+dlprov:DeepLearningModel a owl:Class,
+        dlprov:Concept .
+
+dlprov:Metric a owl:Class,
+        dlprov:Concept .
+
+dlprov:Framework a owl:Class,
+        dlprov:Concept .
+
+dlprov:PreprocessingStep a owl:Class,
+        dlprov:Concept .
+
