@@ -5,7 +5,6 @@ mp = """As you perform this task, follow these steps:
 2. Make a preliminary identification of the concepts, relationships, data properties and inverse properties in the questions.
 3. Critically assess your preliminary analysis. If you feel unsure about your initial identification, try to reassess it.
 4. Confirm your final answer and explain the reasoning behind your choice.
-5. Evaluate your confidence (0-100%) in your analysis and provide an explanation for this confidence level.
 """
 
 prompt_ms = ['', mp]
